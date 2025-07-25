@@ -40,10 +40,9 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Documentation</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Getting Started</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">API Reference</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Examples</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Contributing</a></li>
+              <li><a href="https://graypaper.com" className="hover:text-foreground transition-colors">Getting Started</a></li>
+              <li><a href="https://docs.google.com/presentation/d/1IY9FGTxSuCc71m0HPA6-WuKRNi4a3XCj6g2mSemfxKc/edit?usp=sharing" className="hover:text-foreground transition-colors">Examples</a></li>
+              <li><a href="https://github.com/jamixir/" className="hover:text-foreground transition-colors">Contributing</a></li>
             </ul>
           </div>
 
