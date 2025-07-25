@@ -51,7 +51,7 @@ export const Footer = () => {
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-foreground transition-colors flex items-center">
+                <a href="https://graypaper.com/" className="hover:text-foreground transition-colors flex items-center">
                   JAM Graypaper <ExternalLink className="h-3 w-3 ml-1" />
                 </a>
               </li>
