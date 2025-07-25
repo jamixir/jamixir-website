@@ -56,26 +56,24 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors flex items-center">
-                  Polkadot Wiki <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="https://docs.jamcha.in/" className="hover:text-foreground transition-colors flex items-center">
+                  JAM Community DOCS <ExternalLink className="h-3 w-3 ml-1" />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors flex items-center">
+                <a href="https://elixir-lang.org/" className="hover:text-foreground transition-colors flex items-center">
                   Elixir Lang <ExternalLink className="h-3 w-3 ml-1" />
                 </a>
               </li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Community</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">JAM Meetups</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">sub0 Talks</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Discord</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Contact</a></li>
+              <li><a href="https://t.me/+jlaRqhcS06o1YTYx" className="hover:text-foreground transition-colors">Jamixir Telegram</a></li>
+              <li><a href="https://discord.gg/vx8t5bc7tk" className="hover:text-foreground transition-colors">JAM DAO Discord</a></li>
+              <li><a href="mailto:daniel@jamixir.org" className="hover:text-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
