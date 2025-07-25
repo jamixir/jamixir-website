@@ -24,7 +24,7 @@ const features = [
   {
     icon: Zap,
     title: "ELVES",
-    description: "Efficient Light Virtual Execution Subsystem for optimized runtime performance"
+    description: "Endorsing Light Validity Evaluator System for optimized runtime performance"
   },
   {
     icon: GitBranch,

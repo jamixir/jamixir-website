@@ -8,18 +8,18 @@ const teamMembers = [
     email: "daniel@jamixir.org",
     role: "Core Developer & Protocol Architect",
     bio: "Experienced software engineer with deep expertise in distributed systems and functional programming. Passionate about bridging the gap between formal specifications and practical implementations.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    github: "daniel-cukier",
-    twitter: "danielcukier"
+    avatar: "/lovable-uploads/8d8b04cd-7ec3-40d1-a6cb-cf9d0edd9ed7.png",
+    github: "danicuki",
+    twitter: "danicuki"
   },
   {
-    name: "Baruch Fishman", 
+    name: "Baruch Fishman (Luke)", 
     email: "daiagi@jamixir.org",
     role: "Core Developer & Systems Engineer",
     bio: "Systems architect with expertise in fault-tolerant distributed systems. Brings extensive experience in building resilient, high-performance applications using Erlang/OTP.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    github: "baruch-fishman",
-    twitter: "baruchfishman"
+    avatar: "/lovable-uploads/765bd2c6-26e9-4df0-90f2-4320fbc5fbfd.png",
+    github: "daiagi",
+    twitter: "luke_fishman"
   }
 ];
 

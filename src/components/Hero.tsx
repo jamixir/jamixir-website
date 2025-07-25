@@ -31,17 +31,20 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="https://github.com/jamixir" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </a>
+            </Button>
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 text-lg px-8 py-6" asChild>
+              <a href="https://t.me/+jlaRqhcS06o1YTYx" target="_blank" rel="noopener noreferrer">
+                Join Telegram
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6">
               <BookOpen className="mr-2 h-5 w-5" />
               Read the Docs
-            </Button>
-            <Button variant="ghost" size="lg" className="text-lg px-8 py-6">
-              <Code className="mr-2 h-5 w-5" />
-              Getting Started
             </Button>
           </div>
 
