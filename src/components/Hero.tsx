@@ -45,7 +45,7 @@ export const Hero = () => {
             <Button variant="outline" size="lg" className="text-lg px-8 py-6">
               <BookOpen className="mr-2 h-5 w-5" />
               <a href="https://docs.jamcha.in/" target="_blank" rel="noopener noreferrer">
-              Read the Docs 2
+              Read the Docs
               </a>
             </Button>
           </div>
