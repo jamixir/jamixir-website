@@ -29,24 +29,21 @@ end`
   {
     id: "state-transition",
     title: "State Transition Function", 
-    math: "Ψ: (σ, ρ, χ) ↦ σ'",
+    math: "Υ: (σ, B) ↦ σ'",
     elixir: `defmodule JAM.StateTransition do
   @doc "State transition function from JAM graypaper"
-  def psi(state, block, reports) do
-    state
-    |> apply_block(block)
-    |> integrate_reports(reports)
-    |> finalize_state()
+  def add_block(%State{} = state, %Block{} = block) do
+     timeslot_   = get_timeslot(h)
+     entropy_ = get_new_entropy(h, state.timeslot, state.entropy)
+     # ...
   end
   
-  defp apply_block(σ, ρ) do
-    ρ.extrinsic
-    |> Enum.reduce(σ, &apply_extrinsic/2)
+  defp get_new_entropy(h, timeslot, %Entropy{} = entropy) do
+
   end
   
-  defp integrate_reports(σ, χ) do
-    χ
-    |> Enum.reduce(σ, &merge_report/2)
+  defp get_timeslot(h) do
+    h.timeslot
   end
 end`
   },
