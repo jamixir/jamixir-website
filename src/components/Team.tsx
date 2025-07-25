@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Daniel Cukier",
     email: "daniel@jamixir.org",
-    role: "Core Developer & Protocol Architect",
+    role: "Core Developer",
     bio: "Experienced software engineer with deep expertise in distributed systems and functional programming. Passionate about bridging the gap between formal specifications and practical implementations.",
     avatar: "/lovable-uploads/8d8b04cd-7ec3-40d1-a6cb-cf9d0edd9ed7.png",
     github: "danicuki",
@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Baruch Fishman (Luke)", 
     email: "daiagi@jamixir.org",
-    role: "Core Developer & Systems Engineer",
+    role: "Core Developer",
     bio: "Systems architect with expertise in fault-tolerant distributed systems. Brings extensive experience in building resilient, high-performance applications using Erlang/OTP.",
     avatar: "/lovable-uploads/765bd2c6-26e9-4df0-90f2-4320fbc5fbfd.png",
     github: "daiagi",
