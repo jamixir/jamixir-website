@@ -7,24 +7,16 @@ const examples = [
   {
     id: "block",
     title: "Block Structure",
-    math: "β = ⟨P_H, P_E, P_T⟩",
+
+    math: "B ≡ (H, E)",
     elixir: `defmodule JAM.Block do
   @type t :: %__MODULE__{
     header: JAM.Header.t(),
     extrinsic: JAM.Extrinsic.t(), 
-    tickets: [JAM.Ticket.t()]
   }
   
-  defstruct [:header, :extrinsic, :tickets]
-  
-  def new(header, extrinsic, tickets) do
-    %__MODULE__{
-      header: header,
-      extrinsic: extrinsic,
-      tickets: tickets
-    }
-  end
-end`
+  defstruct [:header, :extrinsic]
+  end`
   },
   {
     id: "state-transition",
@@ -80,22 +72,23 @@ end`
     math: "ω = ⟨c, l, s, x⟩",
     elixir: `defmodule JAM.WorkPackage do
   @type t :: %__MODULE__{
-    core_index: non_neg_integer(),
-    length: non_neg_integer(),
-    segment_root: binary(),
-    extrinsics: [JAM.Extrinsic.t()]
-  }
+          authorization_token: binary(),
+          service: integer(),
+          authorization_code_hash: binary(),
+          parameterization_blob: binary(),
+          context: RefinementContext.t(),
+          work_items: list(WorkItem.t())
+        }
   
-  defstruct [:core_index, :length, :segment_root, :extrinsics]
+  defstruct [
+    :authorization_token, :service, :authorization_code_hash, :parameterization_blob,  
+    :context, :work_items
+  ]
   
-  def validate(%__MODULE__{} = package) do
-    with :ok <- validate_core_index(package.core_index),
-         :ok <- validate_length(package.length),
-         :ok <- validate_segment_root(package.segment_root),
-         :ok <- validate_extrinsics(package.extrinsics) do
-      {:ok, package}
-    end
+  def valid?(wp) do
+    valid_data_segments?(wp) && valid_size?(wp) && valid_items?(wp) && valid_gas?(wp)
   end
+
 end`
   }
 ];
